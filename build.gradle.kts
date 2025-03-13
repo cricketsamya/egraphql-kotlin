@@ -1,7 +1,8 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    id("org.springframework.boot") version "2.6.3"
+
+    id("org.springframework.boot") version "3.0.4"
     id("io.spring.dependency-management") version "1.1.0"
     id("com.expediagroup.graphql") version "5.3.2"
     kotlin("jvm") version "1.7.20"
@@ -19,10 +20,10 @@ repositories {
 }
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-data-jdbc:2.7.3")
+    implementation("org.springframework.boot:spring-boot-starter-data-jdbc:3.0.4")
     implementation("org.springframework.boot:spring-boot-starter-webflux:2.6.3")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.13.4")
-    implementation("io.projectreactor.kotlin:reactor-kotlin-extensions:1.1.5")
+    implementation("io.projectreactor.kotlin:reactor-kotlin-extensions:1.2.1")
     implementation("org.jetbrains.kotlin:kotlin-reflect:1.7.10")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.10")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor:1.6.0")
