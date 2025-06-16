@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     id("org.springframework.boot") version "3.0.4"
     id("io.spring.dependency-management") version "1.0.11.RELEASE"
-    id("com.expediagroup.graphql") version "5.3.2"
+    id("com.expediagroup.graphql") version "8.8.1"
     kotlin("jvm") version "1.7.20"
     kotlin("plugin.spring") version "1.6.10"
 }
@@ -27,7 +27,7 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.10")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor:1.6.0")
     implementation("com.expediagroup:graphql-kotlin-spring-server:6.2.2")
-    implementation("com.expediagroup:graphql-kotlin-hooks-provider:5.3.2")
+    implementation("com.expediagroup:graphql-kotlin-hooks-provider:8.8.1")
     implementation("org.postgresql:postgresql:42.5.0")
 
     runtimeOnly("com.h2database:h2:2.1.214")
